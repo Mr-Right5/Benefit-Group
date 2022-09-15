@@ -1,0 +1,117 @@
+/* var */
+:root{
+    --mainColor:#d69999;
+    --secondColor:#98cfe3;
+    --thirdColor: #77676e;
+    --sectionPadding: 60px;
+}
+/* end var */
+.course .containar,
+.course2 .containar{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.slider-container,
+.slider-container2{
+    margin-bottom: 15px;
+    width: 50%;
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider-container img,
+.slider-container2 img{
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 1s;
+    height: 80%;
+    border-radius: 4px;
+}
+@media ( max-width: 767px){
+    .slider-container img,
+    .slider-container2 img{
+        height: 50%;
+    }
+}
+.slider-container img.active,
+.slider-container2 img.active{
+    opacity: 1;
+}
+
+.slider-control,
+.slider-control2{
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+}
+@media ( max-width: 767px){
+    .slider-control,
+    .slider-control2{
+        width: 75%;
+    }
+}
+.slider-control .prev,
+.slider-control .next,
+.slider-control2 .prev,
+.slider-control2 .next{
+    background-color: var(--mainColor);
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 5px;
+    user-select: none;
+    width: 20%;
+}
+.slider-control .prev,
+.slider-control2 .prev{
+    float: right;
+}
+.slider-control .next,
+.slider-control2 .next{
+    float: left;
+}
+.slider-control .prev.disabled,
+.slider-control2 .prev.disabled,
+.slider-control .next.disabled,
+.slider-control2 .next.disabled{
+    background-color: #d699996b;
+    cursor: no-drop;
+}
+.slider-control .ind,
+.slider-control2 .ind{
+    width: 60%;
+    float: left;
+}
+.slider-control .ind ul,
+.slider-control2 .ind ul{
+    list-style: none;
+    margin: 0;
+    text-align: center;
+}
+.slider-control .ind ul li,
+.slider-control2 .ind ul li{
+    display: inline-block;
+    background-color: #F6F6F6;
+    color: #333;
+    font-weight: bold;
+    height: 28px;
+    width: 28px;
+    border-radius: 4px;
+    margin: 0 2px;
+    line-height: 28px;
+    cursor: pointer;
+}
+.slider-control .ind ul li.active,
+.slider-control2 .ind ul li.active{
+    background-color: var(--secondColor);
+    color: #FFF;
+}
