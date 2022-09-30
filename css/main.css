@@ -43,14 +43,17 @@ ul{
 }
 /* laegr */
 @media (min-width:1200px){
-    .containar{ width: 1100px;}
+    .containar{ width: 1170px;}
 }
 @media (max-width:991px){
     .head-special{
         text-align: center;
-        width: 100%;
 
     }
+}
+.head-special{
+    width: 100%;
+
 }
 .head-special h1{
     font-size: 45px;
