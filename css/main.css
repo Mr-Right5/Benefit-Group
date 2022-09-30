@@ -43,11 +43,12 @@ ul{
 }
 /* laegr */
 @media (min-width:1200px){
-    .containar{ width: 1170px;}
+    .containar{ width: 1100px;}
 }
 @media (max-width:991px){
     .head-special{
         text-align: center;
+        width: 100%;
 
     }
 }
@@ -64,6 +65,11 @@ ul{
     font-weight: 700;
     margin-top: -15px;
     margin-bottom: 50px;
+}
+.head-special li{
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 700;
 }
 /* end global rules */
 /* start header */
