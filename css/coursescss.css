@@ -115,3 +115,19 @@
     background-color: var(--secondColor);
     color: #FFF;
 }
+/* start us ul style */
+.head-special ul{
+    list-style-type: circle;
+    
+    list-style-position: outside;
+    padding: 13px;
+    border-right: solid 4px #98cfe3;
+    text-align: right;
+}
+.head-special ul li{
+    line-height: 2;
+}
+.head-special li::marker {
+    color: #77676e;
+  }
+/* end us ul style */
