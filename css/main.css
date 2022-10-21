@@ -295,18 +295,20 @@ header nav i + ul.active{
 .join-us .head-special h1{
     color: white;
 }
-.join-us .link {
+.link {
+    width: 95%;
+    margin-bottom: 15px;
     text-align: center;
     animation: 1s infinite alternate animate;
     animation-timing-function: cubic-bezier(0.6, -0.28, 0.74, 0.05);
 }
-.join-us .link a{
+.link a{
     color: #020202;
     font-size: 40px;
     font-weight: 700;
     transition: 0.2s;
 }
-.join-us .link a:hover{
+.link a:hover{
     color: var(--secondColor);
 }
 @keyframes animate {
