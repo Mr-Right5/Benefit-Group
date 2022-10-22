@@ -191,6 +191,10 @@ header nav i + ul.active{
         text-align: center;
         width: 100%;
     }
+    .containar p.head-p{
+        text-align: center;
+    line-height: 1.6;
+    }
 }
 .landing .text h3{
     font-size: 30px;
