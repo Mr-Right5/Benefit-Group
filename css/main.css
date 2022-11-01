@@ -192,7 +192,7 @@ header nav i + ul.active{
         width: 100%;
     }
     .containar p.head-p{
-        text-align: center;
+    text-align: center;
     line-height: 1.6;
     }
 }
